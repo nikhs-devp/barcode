@@ -1,0 +1,94 @@
+body {
+  background-color: #f4f7f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.variant-generator-card {
+  max-width: 600px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.color-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.color-option:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.color-option.selected {
+  border-color: #007bff;
+  background-color: #e9ecef;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.color-option span {
+  font-weight: 500;
+}
+
+.size-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#barcodeResults .card {
+  transition: transform 0.3s ease;
+}
+
+#barcodeResults .card:hover {
+  transform: scale(1.03);
+}
+
+.selected-color-tag {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background-color: #e9ecef;
+}
+
+.selected-color-tag .color-preview {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 8px;
+  border: 1px solid white;
+}
+
+.selected-color-tag .remove-color {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #dc3545;
+  font-weight: bold;
+}
